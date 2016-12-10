@@ -92,6 +92,66 @@ input[type="checkbox"].fill-in:checked::before {
 	border-color: white;
 }
 
+/* ==================== *\
+		DROPDOWN
+\* ==================== */
 
+.drop-container{
+  position: relative;
+  width: 120px;
+}
+
+.drop-btn{
+  background: #23AA67;
+  border-radius: 3px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  padding: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+.drop-list{
+  background: #239900;
+  list-style: none;
+  margin-top:-50px;
+  opacity: 0;
+  padding-left: 0;
+  position: absolute;
+  width: 100%;
+  visibility: hidden;
+}
+
+.drop-list li{
+  color: #FFFFFF;
+  padding-top: 15px;
+  padding-left: 15px;
+  margin: 5px auto;
+}
+
+.drop-list li:first-child{
+  margin-top:0;
+}
+
+.drop-list li label{
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+.divider{
+  border-bottom: 1px solid; 
+}
+
+#drop{
+  display: none;
+}
+
+#drop:checked ~.drop-list{
+  opacity: 1;
+  transition: all .4s ease-in-out;
+  visibility: inherit;
+}
 
 
