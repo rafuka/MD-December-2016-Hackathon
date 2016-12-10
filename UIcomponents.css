@@ -115,6 +115,48 @@ input[type="checkbox"].no-box:checked::before {
 	height: 12px;
 }
 
+input[type="radio"] {
+    -webkit-appearance: none;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #cfcfcf;
+    outline: none;
+}
+
+input[type="radio"]:checked {
+	border-color: #33c5dc;
+}
+
+input[type="radio"]::before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 12px;
+	left: 12px;
+	border-radius: 50%;
+	transition: all .2s ease-in-out;
+}
+
+input[type="radio"]:checked::before {
+	top: -1px;
+	left: -1px;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: #33c5dc;
+}
+
+input[type="radio"].gapped:checked::before {
+	width: 11px;
+	height: 11px;
+	top: 6px;
+	left: 6px;
+}
+
+
 /* =================================== *\
 		DROPDOWN
 \* =================================== */
