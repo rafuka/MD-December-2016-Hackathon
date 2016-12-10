@@ -12,10 +12,6 @@ body {
 }
 
 
-
-
-
-
 /* =================================== *\
 		RADIO BUTTONS & CHECKBOX
 \* =================================== */
@@ -92,16 +88,44 @@ input[type="checkbox"].fill-in:checked::before {
 	border-color: white;
 }
 
-/* ==================== *\
-		DROPDOWN
-\* ==================== */
+input[type="checkbox"].no-box {
+	border: none;
+}
 
-.drop-container{
+input[type="checkbox"].no-box::before {
+	content: '';
+	opacity: 1;
+	transform: initial;
+	position: absolute;
+	border: 1px solid #cfcfcf;
+	border-radius: 5px;
+	width: 23px;
+	height: 23px;
+	top: 0;
+	left: 0;
+}
+
+input[type="checkbox"].no-box:checked::before {
+	transform: rotate(-45deg);
+	border-radius: 0;
+	border-top: none;
+	border-right: none;
+	border-bottom: 2px solid #33c5dc;
+	border-left: 2px solid #33c5dc;
+	height: 12px;
+}
+
+/* =================================== *\
+		DROPDOWN
+\* =================================== */
+
+.drop-container {
+
   position: relative;
   width: 120px;
 }
 
-.drop-btn{
+.drop-btn {
   background: #23AA67;
   border-radius: 3px;
   box-sizing: border-box;
@@ -112,7 +136,7 @@ input[type="checkbox"].fill-in:checked::before {
   width: 100%;
 }
 
-.drop-list{
+.drop-list {
   background: #239900;
   list-style: none;
   margin-top:-50px;
@@ -123,24 +147,24 @@ input[type="checkbox"].fill-in:checked::before {
   visibility: hidden;
 }
 
-.drop-list li{
+.drop-list li {
   color: #FFFFFF;
   padding-top: 15px;
   padding-left: 15px;
   margin: 5px auto;
 }
 
-.drop-list li:first-child{
+.drop-list li:first-child {
   margin-top:0;
 }
 
-.drop-list li label{
+.drop-list li label {
   cursor: pointer;
   display: block;
   width: 100%;
 }
 
-.divider{
+.divider {
   border-bottom: 1px solid; 
 }
 
@@ -148,7 +172,7 @@ input[type="checkbox"].fill-in:checked::before {
   display: none;
 }
 
-#drop:checked ~.drop-list{
+#drop:checked ~.drop-list {
   opacity: 1;
   transition: all .4s ease-in-out;
   visibility: inherit;
