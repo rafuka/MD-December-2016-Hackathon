@@ -218,5 +218,156 @@ input[type="radio"].gapped:checked::before {
   transition: all .4s ease-in-out;
   visibility: inherit;
 }
+/* =================================== *\
+	Paper / Shadow Component
+\* =================================== */
 
+.paper section div {
+  padding: 50px;
+  margin: 20px;
+  background-color: #CCC;
+  position: relative;
+  display: inline-block;
+}
+
+/* Defining Shapes */
+
+.paper .square {
+    
+}
+
+.paper .rounded {
+  border-radius: 8px;
+}
+
+.paper .circle {
+  border-radius: 50%;
+}
+
+/* Defining Shadows */
+
+.paper .shadow-1 {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+  
+.paper .shadow-2 {
+  box-shadow: 0 2px 7px rgba(0,0,0,0.15), 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.paper .shadow-3 {
+  box-shadow: 0 5px 10px rgba(0,0,0,0.175), 0 7px 13px rgba(0,0,0,0.3);
+}
+
+.paper .shadow-4 {
+  box-shadow: 0 7px 13px rgba(0,0,0,0.2), 0 10px 15px rgba(0,0,0,0.325);
+}
+
+.paper .shadow-5 {
+  box-shadow: 0 10px 15px rgba(0,0,0,0.25), 0 12px 17px rgba(0,0,0,0.35);
+}
+
+/* Preparing each shape for animation */
+
+.paper .sqaure-animate::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.paper .rounded-animate::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.paper .circle-animate::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* Animation Levels */
+
+.paper .animate-level-1::after {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2); 
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.paper .animate-level-1:hover::after {
+  opacity: 1;
+}
+
+.paper .animate-level-2::after {
+  box-shadow: 0 2px 7px rgba(0,0,0,0.2), 0 4px 10px rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.paper .animate-level-2:hover::after {
+  opacity: 1;
+}
+
+.paper .animate-level-3::after {
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1), 0 7px 13px rgba(0,0,0,0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.paper .animate-level-3:hover::after {
+  opacity: 1;
+}
+
+.paper .animate-level-4::after {
+  box-shadow: 0 7px 13px rgba(0,0,0,0.1), 0 10px 15px rgba(0,0,0,0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.paper .animate-level-4:hover::after {
+  opacity: 1;
+}
+
+.paper .animate-level-5::after {
+  box-shadow: 0 10px 19px rgba(0,0,0,0.1), 0 12px 20px rgba(0,0,0,0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.paper .animate-level-5:hover::after {
+  opacity: 1;
+}
+
+/* Styling for display only */
+
+.paper section div:nth-child(2) {
+  background-color: #89C4F4;
+}
+
+.paper section div:nth-child(3) {
+  background-color: #1F3A93;
+}
+
+.paper section div:nth-child(4) {
+  background-color: #34495E;
+}
+
+.paper section div:nth-child(5) {
+  background-color: #2C3E50;
+}
+
+.paper section div:nth-child(6) {
+  background-color: #22313F;
+}
 
