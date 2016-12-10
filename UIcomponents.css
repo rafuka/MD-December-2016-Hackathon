@@ -48,11 +48,11 @@ input[type="checkbox"]::before {
 
 input[type="checkbox"]:checked::before {
 	opacity: 1;
-    width: 12px;
-    height: 6px;
-    position: absolute;
-    left: 5px;
-    top: 5px;
+  width: 12px;
+  height: 6px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
 	transition: all .2s ease-in-out;
 }
 
@@ -117,13 +117,13 @@ input[type="checkbox"].no-box:checked::before {
 }
 
 input[type="radio"] {
-    -webkit-appearance: none;
-    position: relative;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    border: 1px solid #cfcfcf;
-    outline: none;
+  -webkit-appearance: none;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #cfcfcf;
+  outline: none;
 }
 
 input[type="radio"]:checked {
