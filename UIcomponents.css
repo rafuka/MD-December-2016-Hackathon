@@ -92,6 +92,29 @@ input[type="checkbox"].fill-in:checked::before {
 	border-color: white;
 }
 
+input[type="checkbox"].no-box {
+	border: none;
+}
 
+input[type="checkbox"].no-box::before {
+	content: '';
+	opacity: 1;
+	transform: initial;
+	position: absolute;
+	border: 1px solid #cfcfcf;
+	border-radius: 5px;
+	width: 23px;
+	height: 23px;
+	top: 0;
+	left: 0;
+}
 
-
+input[type="checkbox"].no-box:checked::before {
+	transform: rotate(-45deg);
+	border-radius: 0;
+	border-top: none;
+	border-right: none;
+	border-bottom: 2px solid #33c5dc;
+	border-left: 2px solid #33c5dc;
+	height: 12px;
+}
