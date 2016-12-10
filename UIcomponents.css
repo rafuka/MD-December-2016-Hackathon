@@ -14,7 +14,7 @@ body {
 
 
 /* =================================== *\
-    RADIO BUTTONS & CHECKBOX
+        RADIO BUTTONS & CHECKBOX
 \* =================================== */
 
 input[type="checkbox"] {
@@ -159,7 +159,7 @@ input[type="radio"].gapped:checked::before {
 
 
 /* =================================== *\
-    DROPDOWN
+                DROPDOWN
 \* =================================== */
 
 .drop-container {
@@ -220,7 +220,7 @@ input[type="radio"].gapped:checked::before {
   visibility: inherit;
 }
 /* =================================== *\
-  Paper / Shadow Component
+            PAPER / SHADOWS
 \* =================================== */
 
 .paper section div {
