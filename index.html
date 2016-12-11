@@ -237,6 +237,39 @@
   <footer>
     <p>Created by Jacob Hayslett, Luis Rojas, Tom Narainpursat, and Rafael Garcia.</p>
   </footer>
+  <script type="text/javascript">
+    var carousel = {};
+
+    // The element parameter is the container that will contain the slides
+    carousel.initialize = function(container) {
+      if (!container) throw "Error: 'element' parameter missing. Please provide an element to be initialized as a carousel";
+
+      //his.containerWidth = element.offsetWidth;
+      this.slides = document.getElementsByClassName("slide");
+      this.slidesNum = this.slides.length;
+
+      if (!(this.slides)) throw "Error: carousel element does not have children (slides)";
+
+      this.currSlide = this.slides[0];
+      
+      console.log(container);
+      container[0].addEventListener('click', function(e) {
+        
+        var slide = e.target.parentElement;
+        console.log(slide);
+        slide.style.transform = "translateX(100px)";
+        //slide.style.transform = "translateZ(50px)";
+        e.stopPropagation();
+      });
+    };
+
+    carousel.initialize(document.getElementsByClassName("carousel"));
+    //console.log(carousel.containerWidth);
+    console.log(carousel.slides);
+    console.log(carousel.slidesNum);
+
+
+  </script>
 </body>
 </html>
                               
