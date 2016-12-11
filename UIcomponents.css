@@ -629,3 +629,121 @@ input[id^="tab-under"]:checked ~ li[class^="last-li"]{
 #tab-under-15:checked ~ .last-li-3{
 	margin-left: 256px;
 }
+
+
+/* ====================== *\
+            Input
+\* ====================== */
+
+.input-component {
+  font-size: 18px;
+}
+
+.input-component div {
+  position: relative;
+  margin: 40px 0;
+  padding: 5px 0;
+}
+
+/* Generic input and label styles */
+
+.input-component input {
+  width: 400px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #aaa;
+  padding: .675em 0;
+  font-size: 1.15em;
+  margin: 5px 0;
+  transition: 200ms ease-in-out;
+}
+
+.input-component label {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.input-component input:focus {
+  outline: none;
+  border-bottom: 2px solid teal;
+}
+
+.input-component input:focus + label,
+.input-component input:focus ~ i {
+  color: teal;
+}
+
+.input-component input:disabled + label {
+  color: #ccc;
+}
+
+.input-component input:disabled {
+  border-bottom: 2px dotted #ccc;
+}
+
+/* Input Style 1 */
+
+.input-component .input-style-1 {
+  position: relative;
+}
+
+.input-component .input-style-1 label {
+  position: absolute;
+  left: 0;
+  top: -20px;
+}
+
+.input-component .input-style-1 input:focus label {
+  color: teal;
+}
+
+.input-component .input-style-1 input:valid {
+  border-bottom: 2px solid green;
+}
+
+.input-component .input-style-1 input:focus {
+  border-bottom: 2px solid teal;
+}
+
+/* Input Style 2 */
+
+.input-component .input-style-2 label {
+  font-size: 1.15em;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 1.4em;
+  transition: 200ms ease-in-out;
+}
+
+.input-component .input-style-2 input:focus + label,
+.input-component .input-style-2 input:valid + label { 
+  font-size: 1em;
+  top: -.9em;
+}
+
+.input-component .icon {
+  margin-left: 50px;
+}
+
+.input-component .icon input {
+  width: 350px;
+}
+
+.input-component .icon i {
+  position: absolute;
+  left: -45px;
+  bottom: 25px;
+  transition: 200ms ease-in-out;
+}
+
+.input-component .icon input:focus ~ i {
+  -ms-transform: scale(1.2,1.2); /* IE 9 */
+  -webkit-transform: scale(1.2,1.2); /* Chrome, Safari, Opera */
+  transform: scale(1.2,1.2);
+  box-shadow: 0 , 0, 5px, 5px, teal;
+}
