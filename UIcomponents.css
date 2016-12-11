@@ -612,17 +612,3 @@ input[id^="tab-under"]:checked ~ li[class^="last-li"]{
 	margin-left: 256px;
 }
 
-/* ====================== *\
-          CAROUSEL
-\* ====================== */
-
-.carousel {
-  display: block;
-  position: relative;
-}
-
-.slide {
-  display: inline-block;
-  position: absolute;
-  transition: all .2s ease-in-out;
-}
