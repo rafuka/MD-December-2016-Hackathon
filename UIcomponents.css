@@ -1,11 +1,15 @@
+
 /* =================================== *\
 				LAYOUT
 \* =================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -236,6 +240,7 @@ input[type="radio"].gapped:checked::before {
 \* =================================== */
 
 .drop-container {
+
   position: relative;
   width: 120px;
 }
@@ -445,3 +450,121 @@ input[type="radio"].gapped:checked::before {
   background-color: #22313F;
 }
 
+/* ====================== *\
+            TABS
+\* ====================== */
+
+.tab-container {
+	background: #89C4F4;
+	width: 500px;
+}
+
+.tab-container ul {
+	list-style: none;
+}
+
+.tab-container ul li {
+	cursor: pointer;
+	display: inline-block;
+	margin: auto 5px;
+	text-align: center;
+	width: 50px;
+}
+
+.tab-container ul li label {
+	color: #1F3A93;
+	cursor: pointer;
+	width: 100%;
+}
+
+.tab-container ul li[class^="last-li"] {
+	display: block;
+	margin:0;
+	padding:0;
+	width: 60px;
+}
+
+.tab-container ul .last-li-1 {
+	border-bottom: 2px solid #2C3E50;
+}
+
+.tab-container ul .last-li-2 {
+	border-bottom: 2px dashed #2C3E50;
+}
+
+.tab-shadow {
+	background: none;
+}
+
+.tab-container ul .last-li-3 {
+	height: 1px;
+	box-shadow: 0px -3px 10px #2C3E50;
+}
+
+.tab-container input {
+	display: none;
+}
+
+input[id^="tab-under"]:checked ~ li[class^="last-li"]{
+	transition: all .5s ease;
+}
+
+#tab-under-1:checked ~ .last-li-1{
+	margin-left: 0px;
+}
+
+#tab-under-2:checked ~ .last-li-1{
+	margin-left: 64px;
+}
+
+#tab-under-3:checked ~ .last-li-1{
+	margin-left: 128px;
+}
+
+#tab-under-4:checked ~ .last-li-1{
+	margin-left: 192px;
+}
+
+#tab-under-5:checked ~ .last-li-1{
+	margin-left: 256px;
+}
+
+#tab-under-6:checked ~ .last-li-2{
+	margin-left: 0px;
+}
+
+#tab-under-7:checked ~ .last-li-2{
+	margin-left: 64px;
+}
+
+#tab-under-8:checked ~ .last-li-2{
+	margin-left: 128px;
+}
+
+#tab-under-9:checked ~ .last-li-2{
+	margin-left: 192px;
+}
+
+#tab-under-10:checked ~ .last-li-2{
+	margin-left: 256px;
+}
+
+#tab-under-11:checked ~ .last-li-3{
+	margin-left: 0px;
+}
+
+#tab-under-12:checked ~ .last-li-3{
+	margin-left: 64px;
+}
+
+#tab-under-13:checked ~ .last-li-3{
+	margin-left: 128px;
+}
+
+#tab-under-14:checked ~ .last-li-3{
+	margin-left: 192px;
+}
+
+#tab-under-15:checked ~ .last-li-3{
+	margin-left: 256px;
+}
