@@ -610,3 +610,18 @@ input[id^="tab-under"]:checked ~ li[class^="last-li"]{
 #tab-under-15:checked ~ .last-li-3{
 	margin-left: 256px;
 }
+
+/* ====================== *\
+          CAROUSEL
+\* ====================== */
+
+.carousel {
+  display: block;
+  position: relative;
+}
+
+.slide {
+  display: inline-block;
+  position: absolute;
+  transition: all .2s ease-in-out;
+}
