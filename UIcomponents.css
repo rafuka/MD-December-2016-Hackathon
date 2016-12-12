@@ -1,6 +1,6 @@
 
 /* =================================== *\
-				LAYOUT
+				          LAYOUT
 \* =================================== */
 
 @import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
@@ -8,7 +8,7 @@
 * {
   margin: 0;
   padding: 0;
-
+  list-style: none;
 }
 
 body {
@@ -34,64 +34,27 @@ header {
 }
 
 .container {
-    height: 100px;
+  height: 100px;
 	margin-top: 0;
-    padding: 2rem 1rem 1rem;
+  padding: 2rem 1rem 1rem;
 	text-align: center;
 }
 
 header h1 {
-    color: #FFFFFF;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    margin-top: 0;
-    letter-spacing: 0;
-    text-shadow: 2px -2px 3px #000000;
+  color: #FFFFFF;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  letter-spacing: 0;
+  text-shadow: 2px -2px 3px #000000;
 }
 
 footer {
-    position: relative;
-    background-color: #446CB3;
-    height: 50px;
-    padding: 1rem 1rem;
-    color: #FFFFFF;
-}
-
-nav {
-    text-align: left;
-	margin-left:1rem;
-    
-}
-nav ul {
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: left;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-}
-
-nav li {
-    list-style: none;
-	margin-right:20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 1.1rem;
-    font-weight: 400;
-}
-
-nav a:hover {
-	color: #89C4F4;
-	transition: .3s all ease-in-out;
+  position: relative;
+  background-color: #446CB3;
+  height: 50px;
+  padding: 1rem 1rem;
+  color: #FFFFFF;
 }
 
 .content{
@@ -247,7 +210,6 @@ input[type="radio"].gapped:checked::before {
   top: 6px;
   left: 6px;
 }
-
 
 /* =================================== *\
                 DROPDOWN
