@@ -238,6 +238,10 @@ input[type="radio"].gapped:checked::before {
   padding: 1em;
   text-align: center;
   width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
 }
 
 .drop-container-aside .drop-btn {
@@ -247,13 +251,14 @@ input[type="radio"].gapped:checked::before {
 }
 
 .drop-list {
-  background: #89C4F4;
+  background-color: #89C4F4;
   list-style: none;
   opacity: 0;
   padding-left: 0;
   position: absolute;
   width: 100%;
   visibility: hidden;
+
 }
 
 .drop-container-aside .drop-list {
@@ -261,7 +266,7 @@ input[type="radio"].gapped:checked::before {
 }
 
 .drop-above {
-	margin-top:-50px;	
+	margin-top: -51px;	
 }
 
 .drop-below {
@@ -275,37 +280,47 @@ input[type="radio"].gapped:checked::before {
 
 .drop-list li {
   color: #F3F3F3;
-  padding-top: 15px;
-  padding-left: 15px;
-  margin: 5px auto;
+  transition: all .2s ease-in-out;
 }
 
-.drop-list li:first-child {
-  margin-top:0;
+.drop-list li:hover {
+  background-color: #7BB6E6;
+  padding-left: 7px;
 }
 
 .drop-aside li {
-	height: 33px;
 	display: inline-block;
-	padding: 0;
-	margin: auto 5px;
+  padding: 0;
 }
 
 .drop-list li label {
   cursor: pointer;
   display: block;
   width: 100%;
+  padding: 10px;
 }
 
 .divider {
   border-bottom: 1px solid; 
+  padding: 0!important;
 }
 
 .drop-aside .divider {
 	border-bottom: none;
-	border-right: 1px solid;
+  border-right: 1px solid white;
+  height: 31px;
+  padding: 0!important;
+  vertical-align: middle;
 }
 
+.drop-aside li:hover {
+  background-color: #7BB6E6;
+  padding: 0;
+}
+
+.drop-aside li label {
+  padding: 16px;
+}
 input[id^="drop"] {
   display: none;
 }
@@ -594,7 +609,7 @@ input[id^="tab-under"]:checked ~ li[class^="last-li"]{
 
 
 /* ====================== *\
-            Input
+            INPUT
 \* ====================== */
 
 .input-component {
