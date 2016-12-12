@@ -390,6 +390,21 @@ input[id^="drop"]:checked ~.drop-list {
 }
 
 /* Preparing each shape for animation */
+.paper .square-animate, .paper .rounded-animate, .paper .circle-animate {
+  transition: all .2s ease-in-out;
+}
+
+.square-animate:hover {
+  transform: scale(1.03);
+}
+
+.rounded-animate:hover {
+  transform: scale(1.03);
+}
+
+.circle-animate:hover {
+  transform: scale(1.03);
+}
 
 .paper .sqaure-animate::after {
   content: '';
